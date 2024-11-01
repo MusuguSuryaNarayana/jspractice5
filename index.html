@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>For-In,For-Of</title>
+    </head>
+    <body>
+        <pre>
+            //ASSESSMENT-5
+//Solve Using For-In Loop
+
+//Q-1
+var car = 
+{
+  brand: 'Toyota',
+  model: 'Corolla',
+  year:   2020
+};
+for(i in car){
+  console.log(`${i} : ${car[i].toString().toUpperCase()}`);
+};
+OUTPUT:brand : TOYOTA
+       model : COROLLA
+       year : 2020
+
+//Q-2
+var numbers = [1,2,3,4,5];
+for(i in numbers)
+{
+  console.log(`${numbers[i]}-HI`);
+};
+OUTPUT: 1-HI
+        2-HI
+        3-HI
+        4-HI
+        5-HI
+
+//Q-3
+var fruits=['Apple','Banana','Cherry','Date'];
+for(i in fruits)
+{
+  console.log(`${i}-${fruits[i].toUpperCase()}`);
+};
+OUTPUT:
+       0-APPLE
+       1-BANANA
+       2-CHERRY
+       3-DATE
+
+//Q-4
+var obj = {
+  name :'John',
+  age : 30,
+  city:'Los Angles',
+  state:'CA'
+};
+obj.city='San Fransisco'
+  console.log(obj);
+  OUTPUT:{ name: 'John', age: 30, city: 'San Fransisco', state: 'CA' }
+
+  //Q-5
+  var car = 
+  {
+    brand: 'Toyota',
+    model: 'Corolla',
+    year:   2020
+  };
+  car.model='Carmy';
+  car.year='2023';
+  console.log(car);
+  OUTPUT:{ brand: 'Toyota', model: 'Carmy', year: '2023' }
+
+  //Q-6
+  var recipe={
+    name:'Pasta',
+    serving:2,
+    ingredients:['noodles','sauce']
+  };
+  recipe.ingredients.push('spiece');
+  console.log(recipe);
+  OUTPUT:{
+    name: 'Pasta',
+    serving: 2,
+    ingredients: [ 'noodles', 'sauce', 'spiece' ]
+  }
+          
+        </pre>
+    </body>
+</html>
